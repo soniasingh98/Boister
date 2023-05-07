@@ -53,6 +53,7 @@ const Login = () => {
           alignItems="center"
           justifyContent={"center"}
           margin="auto"
+          backgroundColor={"white"}
           marginTop={5}
           boxShadow="10px 10px 20px #ccc"
           padding={3}
