@@ -42,7 +42,7 @@ const CreateBlog = () => {
       <form onSubmit={handleSubmit}>
         <Box
           width={"50%"}
-          height={"610px"}
+          height={"550px"}
           border={3}
           borderRadius={10}
           padding={3}
@@ -52,18 +52,31 @@ const CreateBlog = () => {
           backgroundColor="white"
           flexDirection={"column"}
           marginTop="30px"
+          sx={{
+            "@media (max-width: 600px)": {
+              width: "90%",
+            },
+          }}
         >
           <Typography
-            variant="h2"
+            variant="h4"
             textAlign={"center"}
             fontWeight="bold"
             padding={3}
             color="gray"
           >
-            Create a Post
+            Upload Your Craft
           </Typography>
           <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+            sx={{
+              mb: 1,
+              mt: 2,
+              fontSize: "15px",
+              fontWeight: "bold",
+              "@media (max-width: 600px)": {
+                fontSize: "11px",
+              },
+            }}
           >
             Title
           </InputLabel>
@@ -77,7 +90,15 @@ const CreateBlog = () => {
           />
 
           <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+            sx={{
+              mb: 1,
+              mt: 2,
+              fontSize: "15px",
+              fontWeight: "bold",
+              "@media (max-width: 600px)": {
+                fontSize: "11px",
+              },
+            }}
           >
             Description
           </InputLabel>
@@ -91,7 +112,15 @@ const CreateBlog = () => {
           />
 
           <InputLabel
-            sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+            sx={{
+              mb: 1,
+              mt: 2,
+              fontSize: "15px",
+              fontWeight: "bold",
+              "@media (max-width: 600px)": {
+                fontSize: "11px",
+              },
+            }}
           >
             Image URL
           </InputLabel>
@@ -104,7 +133,7 @@ const CreateBlog = () => {
             required
           />
           <Button type="submit" color="primary" variant="contained">
-            Submit
+            Upload
           </Button>
         </Box>
       </form>
