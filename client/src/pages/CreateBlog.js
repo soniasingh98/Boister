@@ -42,12 +42,14 @@ const CreateBlog = () => {
       <form onSubmit={handleSubmit}>
         <Box
           width={"50%"}
+          height={"610px"}
           border={3}
           borderRadius={10}
           padding={3}
           margin="auto"
           boxShadow={"10px 10px 20px #ccc"}
           display="flex"
+          backgroundColor="white"
           flexDirection={"column"}
           marginTop="30px"
         >

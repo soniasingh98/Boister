@@ -47,6 +47,11 @@ export default function BlogCard({
         ":hover:": {
           boxShadow: "10px 10px 20px #ccc",
         },
+        "@media (max-width: 768px)": {
+          width: "60%",
+          padding: 1,
+          boxShadow: "none",
+        },
       }}
     >
       {isUser && (
@@ -68,13 +73,13 @@ export default function BlogCard({
         title={username}
         subheader={time}
       />
-      <CardMedia component="img" height="194" image={image} alt="Paella dish" />
+      <CardMedia component="img" height="300" image={image} alt="Paella dish" />
       <CardContent>
         <Typography variant="h6" color="text.secondary">
-          Title: {title}
+          <b>TITLE</b>: {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Description:{description}
+          <b>DESCRIPTION</b>: {description}
         </Typography>
       </CardContent>
     </Card>

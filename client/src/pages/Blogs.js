@@ -29,7 +29,7 @@ const Blogs = () => {
             description={blog?.description}
             image={blog?.image}
             username={blog?.user?.username}
-            time={blog?.createdAt}
+            time={new Date(blog?.createdAt).toLocaleDateString("en-GB")}
           />
         ))}
     </div>

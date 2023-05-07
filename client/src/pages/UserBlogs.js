@@ -19,7 +19,7 @@ const UserBlogs = () => {
   useEffect(() => {
     getUserBlogs();
   }, []);
-  console.log(blogs);
+
   return (
     <div>
       {blogs && blogs.length > 0 ? (
@@ -31,11 +31,20 @@ const UserBlogs = () => {
             description={blog.description}
             image={blog.image}
             username={blog.user.username}
-            time={blog.createdAt}
+            time={new Date(blog?.createdAt).toLocaleDateString("en-GB")}
           />
         ))
       ) : (
-        <h1>You haven't created blog</h1>
+        <h1
+          style={{
+            color: "white",
+            marginTop: "250px",
+            textAlign: "center",
+            fontSize: "36px",
+          }}
+        >
+          Your Crafts will Appear Here...
+        </h1>
       )}
     </div>
   );
