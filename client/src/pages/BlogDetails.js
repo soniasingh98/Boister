@@ -59,9 +59,10 @@ const BlogDetails = () => {
     <>
       <form onSubmit={handleSubmit}>
         <Box
-          width={"50%"}
+          width={"80%"}
           border={3}
           borderRadius={10}
+          backgroundColor={"white"}
           padding={3}
           margin="auto"
           boxShadow={"10px 10px 20px #ccc"}
